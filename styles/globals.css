@@ -1,0 +1,102 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: rgba(7,130,149,.6);
+  color: #fff;
+}
+
+::selection {
+  background: rgba(7,130,149,.6);
+  color: #fff;
+}
+
+.fixed {
+  width: 100vw;
+  position: fixed;
+  overflow: hidden;
+}
+
+.sms {
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  background: #0086A8;
+  border-radius: 3px;
+  z-index: 50;
+  transition: bottom 0.1s;
+  animation: 0.5s slide-down ease-in-out forwards;
+}
+
+.hidden {
+  animation: 0.5s slide-in ease-in-out forwards;
+}
+
+@keyframes slide-down {
+  from {
+    bottom: -50px;
+  }
+  60% {
+    bottom: -50px;
+  }
+  to {
+    bottom: 10px;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    bottom: 10px;
+  }
+  20% {
+    bottom: -50px;
+  }
+  to {
+    bottom: -50px;
+  }
+}
+
+.haveFun {
+  position: fixed;
+  bottom: 20px;
+  right: -50px;
+  background: url("https://i.gifer.com/fzNE.gif") no-repeat center;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  transition: right 5s;
+}
+
+.spinner .spinner-icon {
+  display: none !important;
+}
+
+#nprogress .bar {
+  background:  #0086A8 !important;
+}
+
+
+.fslightbox-fade-in-strong {
+  animation: none !important;
+  /*animation-duration: 0.3s !important;*/
+}
+
+
